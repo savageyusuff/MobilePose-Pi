@@ -40,10 +40,11 @@ MobilenetV2: FPS is 0.66
 
 ## installation
 
-PyTorch-0.2.0(499MB) - Please refer to [this website](https://wormtooth.com/20180617-pytorch-on-raspberrypi/) 
+PyTorch-0.2.0(499MB) - Please refer to [this website](https://wormtooth.com/20180617-pytorch-on-raspberrypi/)  
 torchvision(2.7MB)  - Please install it from **source**. Repo is [here](https://github.com/pytorch/vision)  
-OpenCV(2.5GB) - You can follow the installation guide matching to your pi model from [this page](https://www.pyimagesearch.com/opencv-tutorials-resources-guides/). 
+OpenCV(2.5GB) - You can follow the installation guide matching to your pi model from [this page](https://www.pyimagesearch.com/opencv-tutorials-resources-guides/).   
 
+Also, don't forget to install libraries
 ```shell
 pip install -r requirements.txt
 ```
@@ -64,9 +65,14 @@ python eval.py --model resnet
  
 ## Citation
 
-Original Repo:
-https://github.com/YuliangXiu/MobilePose-pytorch
+Original Repo:  
+https://github.com/YuliangXiu/MobilePose-pytorch  
 
-PyTorch installation:
-https://www.pyimagesearch.com/2017/09/04/raspbian-stretch-install-opencv-3-python-on-your-raspberry-pi/
+PyTorch installation:  
 https://wormtooth.com/20180617-pytorch-on-raspberrypi/
+
+torchvision installation:  
+https://github.com/pytorch/vision  
+
+OpenCV installation:  
+https://www.pyimagesearch.com/2017/09/04/raspbian-stretch-install-opencv-3-python-on-your-raspberry-pi/  
