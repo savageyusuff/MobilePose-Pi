@@ -41,8 +41,9 @@ MobilenetV2: FPS is 0.66
 ## installation
 
 
-PyTorch installation on Pi  
+PyTorch 
 torchvision
+OpenCV
 
 ```shell
 pip install -r requirements.txt
