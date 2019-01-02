@@ -38,7 +38,7 @@ MobilenetV2: FPS is 0.66
  Raspberry Pi (I used Pi 2 Model B for this repo)  
  Rasbian stretch  
 
-## installation
+## Installation
 
 PyTorch-0.2.0(499MB) - Please refer to [this website](https://wormtooth.com/20180617-pytorch-on-raspberrypi/)  
 torchvision(2.7MB)  - Please install it from **source**. Repo is [here](https://github.com/pytorch/vision)  
@@ -49,7 +49,7 @@ Also, don't forget to install libraries
 pip install -r requirements.txt
 ```
  
-## how to run
+## Execution
 For mobilenet:   
  ```shell
 python eval.py --model mobilenet
