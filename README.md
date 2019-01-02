@@ -1,6 +1,6 @@
 # MobilePose-Pi
 
- this is an implementation of [MobilePose-pytorch](https://github.com/YuliangXiu/MobilePose-pytorch) for Raspberry Pi.
+ this is an deployment of [MobilePose-pytorch](https://github.com/YuliangXiu/MobilePose-pytorch) for Raspberry Pi.
  
 ## Results
   
@@ -36,12 +36,17 @@ MobilenetV2: FPS is 0.66
 
  Raspberry Pi (I used Pi 2 Model B for this repo)  
  Rasbian stretch  
- models
+ models - download from [original repo](https://github.com/YuliangXiu/MobilePose-pytorch)
 
 ## installation
 
+
 PyTorch installation on Pi  
 torchvision
+
+```shell
+pip install -r requirements.txt
+```
  
 ## how to run
  
