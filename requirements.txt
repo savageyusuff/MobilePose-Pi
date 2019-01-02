@@ -1,0 +1,54 @@
+
+Click (7.0)
+cloudpickle (0.6.1)
+cryptography (1.7.1)
+cycler (0.10.0)
+Cython (0.29.2)
+dask (1.0.0)
+decorator (4.3.0)
+enum34 (1.1.6)
+Flask (1.0.2)
+functools32 (3.2.3.post2)
+futures
+gitdb2
+GitPython
+idna
+imageio
+imgaug
+ipaddress
+itsdangerous
+Jinja2
+keyring
+keyrings.alt
+kiwisolver
+MarkupSafe
+matplotlib
+networkx
+nose
+numpy
+Pillow
+pip
+pyasn1
+pycocotools
+pycrypto
+pygobject
+pygraphviz
+pyparsing
+python-dateutil
+pytz
+PyWavelets
+pyxdg
+PyYAML
+RPi.GPIO
+scikit-image
+scipy
+SecretStorage
+setuptools
+Shapely
+six
+smmap2
+subprocess32
+toolz
+tqdm
+Werkzeug
+wheel
