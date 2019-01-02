@@ -1,14 +1,13 @@
-
-Click (7.0)
-cloudpickle (0.6.1)
-cryptography (1.7.1)
-cycler (0.10.0)
-Cython (0.29.2)
-dask (1.0.0)
-decorator (4.3.0)
-enum34 (1.1.6)
-Flask (1.0.2)
-functools32 (3.2.3.post2)
+Click
+cloudpickle
+cryptography
+cycler
+Cython
+dask
+decorator
+enum34
+Flask
+functools32
 futures
 gitdb2
 GitPython
