@@ -8,9 +8,17 @@
  Rasbian stretch
 
 ## installation
+
+PyTorch installation on Pi
+torchvision
  
 ## how to run
  
-## License
- 
 ## Citation
+
+Original Repo:
+https://github.com/YuliangXiu/MobilePose-pytorch
+
+PyTorch installation:
+https://www.pyimagesearch.com/2017/09/04/raspbian-stretch-install-opencv-3-python-on-your-raspberry-pi/
+https://wormtooth.com/20180617-pytorch-on-raspberrypi/
