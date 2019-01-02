@@ -1,7 +1,8 @@
 # MobilePose-Pi
 
  This is a deployment of [MobilePose-pytorch](https://github.com/YuliangXiu/MobilePose-pytorch) for Raspberry Pi.  
- This repo's size is 77.7MB.
+ You can download this repo into Pi using ```git clone https://github.com/ba-san/MobilePose-Pi```.  
+ Please note that this repo's size is 77MB.
 ## Results
   
 MobilenetV2: FPS is 0.66
@@ -36,19 +37,28 @@ MobilenetV2: FPS is 0.66
 
  Raspberry Pi (I used Pi 2 Model B for this repo)  
  Rasbian stretch  
- models - download from [original repo](https://github.com/YuliangXiu/MobilePose-pytorch)
 
 ## installation
 
-PyTorch(499MB)  
-torchvision(2.7MB)  
-OpenCV(2.5GB)  
+PyTorch-0.2.0(499MB) - Please refer to [this website](https://wormtooth.com/20180617-pytorch-on-raspberrypi/) 
+torchvision(2.7MB)  - Please install it from **source**. Repo is [here](https://github.com/pytorch/vision)  
+OpenCV(2.5GB) - You can follow the installation guide matching to your pi model from [this page](https://www.pyimagesearch.com/opencv-tutorials-resources-guides/). 
 
 ```shell
 pip install -r requirements.txt
 ```
  
 ## how to run
+For mobilenet:   
+ ```shell
+python eval.py --model mobilenet
+```
+For resnet:  
+```shell
+python eval.py --model resnet
+```
+ 
+ *I just reused the same models original author provided, but you can use your original models.
  
 **Note**: I use 20 images picked up from MPII randomly for test dataset.
  
