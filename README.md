@@ -2,10 +2,12 @@
 
  this is an implementation of [MobilePose-pytorch](https://github.com/YuliangXiu/MobilePose-pytorch) for Raspberry Pi.
  
-##Requirements
+## Requirements
+
+## installation
  
- ##how to run
+## how to run
  
- ##License
+## License
  
- ##Citation
+## Citation
