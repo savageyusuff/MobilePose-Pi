@@ -4,6 +4,9 @@
  
 ## Requirements
 
+ Raspberry Pi (I used Pi 2 Model B for this repo)
+ Rasbian stretch
+
 ## installation
  
 ## how to run
