@@ -1,6 +1,6 @@
 # MobilePose-Pi
 
- This is an deployment of [MobilePose-pytorch](https://github.com/YuliangXiu/MobilePose-pytorch) for Raspberry Pi.  
+ This is a deployment of [MobilePose-pytorch](https://github.com/YuliangXiu/MobilePose-pytorch) for Raspberry Pi.  
  This repo's size is 77.7MB.
 ## Results
   
