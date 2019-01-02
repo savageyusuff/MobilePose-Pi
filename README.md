@@ -1,7 +1,7 @@
 # MobilePose-Pi
 
- this is an deployment of [MobilePose-pytorch](https://github.com/YuliangXiu/MobilePose-pytorch) for Raspberry Pi.
- 
+ This is an deployment of [MobilePose-pytorch](https://github.com/YuliangXiu/MobilePose-pytorch) for Raspberry Pi.  
+ This repo's size is 77.7MB.
 ## Results
   
 MobilenetV2: FPS is 0.66
@@ -40,10 +40,9 @@ MobilenetV2: FPS is 0.66
 
 ## installation
 
-
-PyTorch 
-torchvision
-OpenCV
+PyTorch(499MB)  
+torchvision(2.7MB)  
+OpenCV(2.5GB)  
 
 ```shell
 pip install -r requirements.txt
