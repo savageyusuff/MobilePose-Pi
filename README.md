@@ -37,6 +37,7 @@ MobilenetV2: FPS is 0.66
 
  Raspberry Pi (I used Pi 2 Model B for this repo)  
  Rasbian stretch  
+ Python 2.7  
 
 ## Installation
 
