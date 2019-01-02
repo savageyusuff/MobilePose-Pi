@@ -50,6 +50,8 @@ pip install -r requirements.txt
  
 ## how to run
  
+**Note**: I use 20 images picked up from MPII randomly for test dataset.
+ 
 ## Citation
 
 Original Repo:
