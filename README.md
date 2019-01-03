@@ -19,7 +19,7 @@ MobilenetV2: FPS is 0.66
  Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets= 20 ] = 0.115
  ```
  
- Resnet: FPS is 0.39
+ Resnet18: FPS is 0.39
  ```shell
  Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets= 20 ] = 0.257
  Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets= 20 ] = 0.642
