@@ -43,8 +43,8 @@ MobilenetV2: FPS is 0.66
 Please install following things into your Pi.
 
 PyTorch-0.2.0(499MB) - Please refer to [this website](https://wormtooth.com/20180617-pytorch-on-raspberrypi/).  
-torchvision(2.7MB)  - Please install it from **source**. Repo is [here](https://github.com/pytorch/vision).  
-OpenCV(2.5GB) - You can follow the installation guide matching to your pi model from [this page](https://www.pyimagesearch.com/opencv-tutorials-resources-guides/).   
+torchvision-0.2.1(2.7MB)  - Please install it from **source**. Repo is [here](https://github.com/pytorch/vision).  
+OpenCV-3.4.0(2.5GB) - You can follow the installation guide matching to your pi model from [this page](https://www.pyimagesearch.com/opencv-tutorials-resources-guides/).   
 
 Also, don't forget to install libraries.
 ```shell
