@@ -1,6 +1,5 @@
 Click
 cloudpickle
-cryptography
 cycler
 Cython
 dask
@@ -11,7 +10,6 @@ functools32
 futures
 gitdb2
 GitPython
-idna
 imageio
 imgaug
 ipaddress
@@ -30,8 +28,6 @@ pip
 pyasn1
 pycocotools
 pycrypto
-pygobject
-pygraphviz
 pyparsing
 python-dateutil
 pytz
@@ -41,7 +37,6 @@ PyYAML
 RPi.GPIO
 scikit-image
 scipy
-SecretStorage
 setuptools
 Shapely
 six
