@@ -57,7 +57,7 @@ class DatasetFactory:
         DataFactory.get_test_dataset("resnet", 224)
         In debug mode, it will return a small dataset
         """
-        csv_name = "test_joints_psl.csv"
+        csv_name = "test_joints.csv"
         if debug:
             csv_name = "test_joints-500.csv"
         return PoseDataset(
