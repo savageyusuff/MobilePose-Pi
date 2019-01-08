@@ -7,7 +7,7 @@ DEBUG_MODE = False
 
 def get_transform(modeltype, input_size):
     """
-    :param modeltype: "resnet" / "mobilenet"
+    :param modeltype: "resnet" / "mobilenet" / "shufflenet"
     :param input_size:
     :return:
     """
@@ -15,6 +15,8 @@ def get_transform(modeltype, input_size):
         return Rescale((input_size, input_size))
     elif modeltype == "mobilenet":
         return Wrap((input_size, input_size))
+    elif modeltype == "shufflenet":
+        return Wrap((input_size, input_size))    
     else:
         raise ValueError("modeltype is not wrong")
 
