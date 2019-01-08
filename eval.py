@@ -47,11 +47,6 @@ if __name__ == '__main__':
 
     PATH_PREFIX = "./results/{}".format(modeltype)
     full_name="./models/{}/{}".format(modeltype, filename)
-    # full_name = "/home/yuliang/code/MobilePose-pytorch/models/demo/mobilenetv2_224x224-robust.t7" # Rescale Expansion ToTensor
-    # full_name = "/home/yuliang/code/MobilePose-pytorch/models/demo/mobilenetv2_224x224.t7" # Wrap Expansion ToTensor
-    # full_name = "/home/yuliang/code/MobilePose-pytorch/models/demo/mobilenetv2_224x224-best.t7" # Wrap Expansion ToTensor
-    # full_name = "/home/yuliang/code/MobilePose-pytorch/models/demo/resnet18_227x227-robust.t7" # Rescale Expansion ToTensor
-    # full_name = "/home/yuliang/code/MobilePose-pytorch/models/demo/resnet18_227x227.t7" # Rescale Expansion ToTensor
 
     ROOT_DIR = "./dataset"
     
@@ -67,6 +62,12 @@ if __name__ == '__main__':
  
         test_dataset = DatasetFactory.get_test_dataset(modeltype, input_size)
 
+    elif modeltype == 'shufflenet':
+        full_name = "/change/path/to/MobilePose-Pi/models/shufflenetv2_224x224.t7" # Wrap Expansion ToTensor
+        input_size = 224
+ 
+        test_dataset = DatasetFactory.get_test_dataset(modeltype, input_size)
+        
     print("Loading testing dataset, wait...")
 
     test_dataset_size = len(test_dataset)

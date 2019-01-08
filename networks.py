@@ -14,18 +14,20 @@ Copyright 2018 - 2018 Shanghai Jiao Tong University, Machine Vision and Intellig
 from torchvision import models
 #import torch.nn as nn
 from mobilenetv2 import *
+from ShuffleNetV2 import *
 
 def get_graph_path(model_name):
     return {
         'resnet': './models/demo/resnet18_227x227.t7',
         'mobilenet': './models/demo/mobilenetv2_224x224.t7',
+        'shufflenet': './models/demo/shufflenetv2_224x224.t7',
     }[model_name]
 
 def model_wh(model_name):
     # get the input image size from the model name
     if 'resnet' in model_name.split('_')[0]:
         width, height = 227, 227
-    else:
+    else:  #mobile&shuffle
         width, height = 224, 224 
     return int(width), int(height)
 
