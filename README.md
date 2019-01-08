@@ -60,8 +60,13 @@ For resnet:
 ```shell
 python eval.py --model resnet
 ```
+For shufflenet:  
+```shell
+python eval.py --model shufflenet
+```
  
- *I just reused the same models MobilePose-pytorch author provided, but you can use your own models.
+ *I just reused the same models MobilePose-pytorch author provided. For shufflenet I used my original model.  
+ Of course, you can use your own models also.
  
 **Note**: I use 20 images picked up from MPII randomly for test dataset.
  
