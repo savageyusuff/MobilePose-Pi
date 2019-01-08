@@ -78,7 +78,3 @@ https://github.com/pytorch/vision
 
 OpenCV installation:  
 https://www.pyimagesearch.com/2017/09/04/raspbian-stretch-install-opencv-3-python-on-your-raspberry-pi/  
-
-## License
-
-You can use it freely for non-commercial use.  
