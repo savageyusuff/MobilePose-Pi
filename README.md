@@ -5,8 +5,13 @@
  Please note that this repo's size is around 80MB.
 ## Results
 *FPS is execution time of forward pass per image.
-  
-MobilenetV2: FPS is 0.66
+
+1.0 ShufflenetV2: FPS is under testing  
+```shell 
+
+```
+
+1.0 MobilenetV2: FPS is 0.66
 ```shell
  Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets= 20 ] = 0.045
  Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets= 20 ] = 0.267
@@ -37,7 +42,7 @@ MobilenetV2: FPS is 0.66
 ## Requirements
 
  Raspberry Pi (I used Pi 2 Model B for this repo)  
- Rasbian stretch  
+ Rasbian stretch (32bit)  
  Python 2.7  
 
 ## Installation
