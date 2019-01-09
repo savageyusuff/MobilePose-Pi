@@ -42,6 +42,13 @@ From [paper](https://arxiv.org/pdf/1807.11164.pdf), FPS is estimated around 1.8
  Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets= 20 ] = 0.400
  ```
  
+## Things To Be Done  
+1.Add shufflenet result&training scripts  
+2.Add my experiment information in detail
+3.Deploy PyTorch model  
+4.Convert PyTorch to Caffe2 via ONNX  
+5.Scripts to run by Caffe2  
+ 
 ## Requirements
 
  Raspberry Pi (I used Pi 2 Model B for this repo)  
