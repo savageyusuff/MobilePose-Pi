@@ -81,6 +81,9 @@ python eval.py --model shufflenet
 Original Repo:  
 https://github.com/YuliangXiu/MobilePose-pytorch  
 
+Shufflenet:
+https://github.com/ericsun99/Shufflenet-v2-Pytorch
+
 PyTorch installation:  
 https://wormtooth.com/20180617-pytorch-on-raspberrypi/
 
