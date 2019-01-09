@@ -4,6 +4,7 @@
  You can download this repo into Pi using ```git clone https://github.com/ba-san/MobilePose-Pi```.  
  Please note that this repo's size is around 80MB.
 ## Results
+*FPS is execution time of forward pass per image.
   
 MobilenetV2: FPS is 0.66
 ```shell
