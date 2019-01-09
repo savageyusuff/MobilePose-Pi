@@ -7,6 +7,9 @@
 *FPS is execution time of forward pass per image.
 
 1.0 ShufflenetV2: FPS is under testing  
+From [paper](https://arxiv.org/pdf/1807.11164.pdf), FPS is estimated around 1.8
+
+0.66*(24.4/8.9)=1.8
 ```shell 
 
 ```
@@ -81,7 +84,10 @@ python eval.py --model shufflenet
 Original Repo:  
 https://github.com/YuliangXiu/MobilePose-pytorch  
 
-Shufflenet:  
+ShufflenetV2 paper:  
+https://arxiv.org/pdf/1807.11164.pdf
+
+ShufflenetV2 implementation:  
 https://github.com/ericsun99/Shufflenet-v2-Pytorch
 
 PyTorch installation:  
