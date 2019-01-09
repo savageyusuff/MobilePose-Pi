@@ -44,7 +44,7 @@ From [paper](https://arxiv.org/pdf/1807.11164.pdf), FPS is estimated around 1.8
  
 ## Things To Be Done  
 1.Add shufflenet result&training scripts  
-2.Add my experiment information in detail
+2.Add my experiment information in detail  
 3.Deploy PyTorch model  
 4.Convert PyTorch to Caffe2 via ONNX  
 5.Scripts to run by Caffe2 (C++)  
@@ -96,6 +96,9 @@ https://arxiv.org/pdf/1807.11164.pdf
 
 ShufflenetV2 implementation:  
 https://github.com/ericsun99/Shufflenet-v2-Pytorch
+
+ONNX:  
+https://github.com/onnx/onnx
 
 PyTorch installation:  
 https://wormtooth.com/20180617-pytorch-on-raspberrypi/
