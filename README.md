@@ -53,13 +53,13 @@ From [paper](https://arxiv.org/pdf/1807.11164.pdf), FPS is estimated around 1.8
  ```
  
 ## Things To Be Done  
-1.Add shufflenet result&training scripts--Done  
+1.Add shufflenet result&training scripts--**Done**  
 2.Visualize results  
-3.Add my experiment information in detail  
+3.Add my detailed experiment information    
 4.Deploy PyTorch model  
 5.Convert PyTorch to Caffe2 via ONNX  
 6.Scripts to run by Caffe2 (C++)  
-7.Add better instruction--Done  
+7.Add better instruction--**Done**  
  
 ## Requirements
 
@@ -101,8 +101,15 @@ python eval.py --model shufflenet
 **Note**: I use 20 images picked up from MPII randomly for test dataset.
  
 ## Training
-You can train models at your PC.  
-Please follow the guidance at [this page].  
+You can train three models (shufflenet/mobilenet/resnet) at your **PC**.  
+For instllation, please follow instructions written in there.  
+Different from [MobilePose-pytorch](https://github.com/YuliangXiu/MobilePose-pytorch)(original repo), the command is  
+```python
+ python train.py --model=[name_of_model_you_want_to_train] --retrain=[bool]
+```
+
+If you want to train shufflenet, you can do it just change model name.  
+(i.e. ```python train.py --model=shufflenet```)  
  
 ## Citation
 
