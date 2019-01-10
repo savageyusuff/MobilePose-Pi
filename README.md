@@ -1,7 +1,7 @@
 # MobilePose-Pi
 
  This is a deployment of [MobilePose-pytorch](https://github.com/YuliangXiu/MobilePose-pytorch) for Raspberry Pi.  
- You can download this repo into Pi using ```git clone https://github.com/ba-san/MobilePose-Pi```.  
+ You can download this repo into PC using ```git clone https://github.com/ba-san/MobilePose-Pi```.  
  Please note that this repo's size is around 80MB.
 ## Results
 *FPS is execution time of forward pass per image.  
@@ -53,13 +53,13 @@ From [paper](https://arxiv.org/pdf/1807.11164.pdf), FPS is estimated around 1.8
  ```
  
 ## Things To Be Done  
-1.Add shufflenet result&training scripts  
+1.Add shufflenet result&training scripts--Done  
 2.Visualize results  
 3.Add my experiment information in detail  
 4.Deploy PyTorch model  
 5.Convert PyTorch to Caffe2 via ONNX  
 6.Scripts to run by Caffe2 (C++)  
-7.Add better instruction  
+7.Add better instruction--Done  
  
 ## Requirements
 
@@ -68,7 +68,7 @@ From [paper](https://arxiv.org/pdf/1807.11164.pdf), FPS is estimated around 1.8
  Python 2.7  
 
 ## Installation
-Please install following things into your Pi.
+Please install following things into your Pi.  
 
 PyTorch-0.2.0(499MB) - Follow [my guide](https://github.com/ba-san/MobilePose-Pi/blob/master/PyTorch_Installation_Guide.md).  
 torchvision-0.2.1(2.7MB)  - Please install it from **source**. Repo is [here](https://github.com/pytorch/vision).  
@@ -80,6 +80,8 @@ pip install -r requirements.txt
 ```
  
 ## Execution
+First of all, please put 'mobilepose-pi' directory on your Pi.
+
 For mobilenet:   
  ```shell
 python eval.py --model mobilenet
@@ -97,6 +99,10 @@ python eval.py --model shufflenet
  Of course, you can use your own models also.
  
 **Note**: I use 20 images picked up from MPII randomly for test dataset.
+ 
+## Training
+You can train models at your PC.  
+Please follow the guidance at [this page].  
  
 ## Citation
 
