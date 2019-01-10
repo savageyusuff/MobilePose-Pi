@@ -49,6 +49,7 @@ From [paper](https://arxiv.org/pdf/1807.11164.pdf), FPS is estimated around 1.8
 4.Deploy PyTorch model  
 5.Convert PyTorch to Caffe2 via ONNX  
 6.Scripts to run by Caffe2 (C++)  
+7.Add better instruction  
  
 ## Requirements
 
