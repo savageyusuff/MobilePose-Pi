@@ -17,10 +17,12 @@ Author's environment:
 ([ShuffleNet V2: Practical Guidelines for Efficient
 CNN Architecture Design](https://arxiv.org/pdf/1807.11164.pdf) p.3)  
 
-my environment:
+my environment([source](https://www.raspberrypi.org/products/raspberry-pi-2-model-b/))　:
+>  A 900MHz quad-core ARM Cortex-A7 CPU  
+>  1GB RAM
 
+0.66*(24.4/8.9)=1.8  
 
-0.66*(24.4/8.9)=1.8
 ```python 
  Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets= 20 ] = 0.000
  Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets= 20 ] = 0.000
