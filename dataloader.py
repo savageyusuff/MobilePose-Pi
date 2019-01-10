@@ -17,14 +17,14 @@ from skimage import io, transform
 import cv2
 
 import torch
-#import alog
-#import torch.nn as nn
-#import torch.nn.functional as F
-#import torch.optim as optim
-#import torch.backends.cudnn as cudnn
+import alog
+import torch.nn as nn
+import torch.nn.functional as F
+import torch.optim as optim
+import torch.backends.cudnn as cudnn
 from torch.utils.data import Dataset, DataLoader
-#from torchvision import datasets, transforms, utils, models
-#from torch.autograd import Variable
+from torchvision import datasets, transforms, utils, models
+from torch.autograd import Variable
 import matplotlib
 matplotlib.use('Agg')
 
@@ -37,6 +37,34 @@ def crop_camera(image, ratio=0.15):
     width_20 = width * ratio
     crop_img = image[0:int(height), int(mid_width - width_20):int(mid_width + width_20)]
     return crop_img
+    
+def display_pose( img, pose, ids):
+    
+    mean=np.array([0.485, 0.456, 0.406])
+    std=np.array([0.229, 0.224, 0.225])
+    pose  = pose.data.cpu().numpy()
+    img = img.cpu().numpy().transpose(1,2,0)
+    colors = ['g', 'g', 'g', 'g', 'g', 'g', 'm', 'm', 'r', 'r', 'y', 'y', 'y', 'y','y','y']
+    pairs = [[8,9],[11,12],[11,10],[2,1],[1,0],[13,14],[14,15],[3,4],[4,5],[8,7],[7,6],[6,2],[6,3],[8,12],[8,13]]
+    colors_skeleton = ['r', 'y', 'y', 'g', 'g', 'y', 'y', 'g', 'g', 'm', 'm', 'g', 'g', 'y','y']
+    img = img*std+mean
+    img_width, img_height,_ = img.shape
+    # pose *= np.array([img_width, img_height]) # rescale [0,1]
+    pose = ((pose + 1)* np.array([img_width, img_height])-1)/2 # pose ~ [-1,1]
+    plt.subplot(25,4,ids+1)
+    ax = plt.gca()
+    plt.imshow(img)
+    for idx in range(len(colors)):
+        plt.plot(pose[idx,0], pose[idx,1], marker='o', color=colors[idx])
+    for idx in range(len(colors_skeleton)):
+        plt.plot(pose[pairs[idx],0], pose[pairs[idx],1],color=colors_skeleton[idx])
+    xmin = np.min(pose[:,0])
+    ymin = np.min(pose[:,1])
+    xmax = np.max(pose[:,0])
+    ymax = np.max(pose[:,1])
+    bndbox = np.array(expand_bbox(xmin, xmax, ymin, ymax, img_width, img_height))
+    coords = (bndbox[0], bndbox[1]), bndbox[2]-bndbox[0]+1, bndbox[3]-bndbox[1]+1
+    ax.add_patch(plt.Rectangle(*coords, fill=False, edgecolor='yellow', linewidth=1))
 
 def expand_bbox(left, right, top, bottom, img_width, img_height):
     width = right-left
@@ -166,7 +194,7 @@ class PoseDataset(Dataset):
         return len(self.f_csv)
         
     def __getitem__(self, idx):
-        ROOT_DIR = "/change/path/to/MobilePose-Pi/dataset/"
+        ROOT_DIR = "/media/daisuke/New_Volume/users/daisuke/dataset/mpii"
         line = self.f_csv[idx][0].split(",")
         #print(line)
         img_path = os.path.join(ROOT_DIR,'images',line[0])
@@ -193,10 +221,10 @@ class PoseDataset(Dataset):
 
 import imgaug as ia
 from imgaug import augmenters as iaa
-#from scipy import misc
-#import copy
-#import random
-#from imgaug import parameters as iap
+from scipy import misc
+import copy
+import random
+from imgaug import parameters as iap
 
 class Augmentation(object):
     

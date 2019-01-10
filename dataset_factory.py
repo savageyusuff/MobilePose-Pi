@@ -1,13 +1,12 @@
 from dataloader import *
-import torchvision.transforms as transforms
 
-ROOT_DIR = "./dataset/"  # root dir to the dataset
+ROOT_DIR = "./pose_dataset/mpii"  # root dir to the dataset
 
 DEBUG_MODE = False
 
 def get_transform(modeltype, input_size):
     """
-    :param modeltype: "resnet" / "mobilenet" / "shufflenet"
+    :param modeltype: "resnet" / "mobilenet"
     :param input_size:
     :return:
     """
@@ -16,10 +15,9 @@ def get_transform(modeltype, input_size):
     elif modeltype == "mobilenet":
         return Wrap((input_size, input_size))
     elif modeltype == "shufflenet":
-        return Wrap((input_size, input_size))    
+		return Wrap((input_size, input_size))
     else:
         raise ValueError("modeltype is not wrong")
-
 
 
 class DatasetFactory:
@@ -35,7 +33,7 @@ class DatasetFactory:
         DataFactory.get_train_dataset("resnet", 224)
         In debug mode, it will return a small dataset
         """
-        csv_name = "train_joints.csv"
+        csv_name = "train_joints_psl.csv"  #target
         if debug:
             csv_name = "train_joints-500.csv"
 
