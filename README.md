@@ -10,6 +10,16 @@
 1.0 ShufflenetV2: FPS is 1.09 and Model size is 5.3MB  
 From [paper](https://arxiv.org/pdf/1807.11164.pdf), FPS is estimated around 1.8
 
+Author's environment:
+>ARM.
+>A Qualcomm Snapdragon 810. We use a highly-optimized Neon-based
+>implementation. A single thread is used for evaluation.
+([ShuffleNet V2: Practical Guidelines for Efficient
+CNN Architecture Design](https://arxiv.org/pdf/1807.11164.pdf) p.3)  
+
+my environment:
+
+
 0.66*(24.4/8.9)=1.8
 ```python 
  Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets= 20 ] = 0.000
