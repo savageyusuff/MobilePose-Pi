@@ -11,7 +11,7 @@
 From [paper](https://arxiv.org/pdf/1807.11164.pdf), FPS is estimated around 1.8
 
 0.66*(24.4/8.9)=1.8
-```shell 
+```python 
  Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets= 20 ] = 0.000
  Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets= 20 ] = 0.000
  Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets= 20 ] = 0.000
@@ -25,7 +25,7 @@ From [paper](https://arxiv.org/pdf/1807.11164.pdf), FPS is estimated around 1.8
 ```
 
 1.0 MobilenetV2: FPS is 0.66 and Model size is 9.3MB
-```shell
+```python
  Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets= 20 ] = 0.045
  Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets= 20 ] = 0.267
  Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets= 20 ] = 0.000
@@ -39,7 +39,7 @@ From [paper](https://arxiv.org/pdf/1807.11164.pdf), FPS is estimated around 1.8
  ```
  
  Resnet18: FPS is 0.39 and Model size is 44.9MB
- ```shell
+ ```python
  Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets= 20 ] = 0.257
  Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets= 20 ] = 0.642
  Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets= 20 ] = 0.208
