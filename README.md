@@ -60,9 +60,9 @@ From [paper](https://arxiv.org/pdf/1807.11164.pdf), FPS is estimated around 1.8
 ## Installation
 Please install following things into your Pi.
 
-PyTorch-0.2.0(499MB) - Please refer to [this website](https://wormtooth.com/20180617-pytorch-on-raspberrypi/), but please note the procedure on this post is for Python 3 and PyTorch 0.4.0. You need to modify some codes there. (I'll share it later, though.)   
+PyTorch-0.2.0(499MB) - Follow [my guide](https://github.com/ba-san/MobilePose-Pi/blob/master/PyTorch_Installation_Guide.md).
 torchvision-0.2.1(2.7MB)  - Please install it from **source**. Repo is [here](https://github.com/pytorch/vision).  
-OpenCV-3.4.0(2.5GB) - You can follow the installation guide matching your pi model from [this page](https://www.pyimagesearch.com/opencv-tutorials-resources-guides/).   
+OpenCV-3.4.0(2.5GB) - You can refer to the installation guide matching your pi model from [this page](https://www.pyimagesearch.com/opencv-tutorials-resources-guides/).   
 
 Also, don't forget to install libraries.
 ```shell
