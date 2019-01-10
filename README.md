@@ -5,16 +5,26 @@
  Please note that this repo's size is around 80MB.
 ## Results
 *FPS is execution time of forward pass per image.
+**Note**:As you can see, each model has room to be improved. I'd appreciated if there are any ideas or opinions!  
 
-1.0 ShufflenetV2: FPS is under testing  
+1.0 ShufflenetV2: FPS is 1.09 and Model size is 5.3MB  
 From [paper](https://arxiv.org/pdf/1807.11164.pdf), FPS is estimated around 1.8
 
 0.66*(24.4/8.9)=1.8
 ```shell 
-
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets= 20 ] = 0.000
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets= 20 ] = 0.000
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets= 20 ] = 0.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets= 20 ] = -1.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets= 20 ] = 0.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 20 ] = 0.000
+ Average Recall     (AR) @[ IoU=0.50      | area=   all | maxDets= 20 ] = 0.000
+ Average Recall     (AR) @[ IoU=0.75      | area=   all | maxDets= 20 ] = 0.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets= 20 ] = -1.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets= 20 ] = 0.000
 ```
 
-1.0 MobilenetV2: FPS is 0.66
+1.0 MobilenetV2: FPS is 0.66 and Model size is 9.3MB
 ```shell
  Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets= 20 ] = 0.045
  Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets= 20 ] = 0.267
@@ -28,7 +38,7 @@ From [paper](https://arxiv.org/pdf/1807.11164.pdf), FPS is estimated around 1.8
  Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets= 20 ] = 0.115
  ```
  
- Resnet18: FPS is 0.39
+ Resnet18: FPS is 0.39 and Model size is 44.9MB
  ```shell
  Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets= 20 ] = 0.257
  Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets= 20 ] = 0.642
