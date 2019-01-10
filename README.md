@@ -104,9 +104,7 @@ python eval.py --model shufflenet
 You can train three models (shufflenet/mobilenet/resnet) at your **PC**.  
 For instllation, please follow instructions written in there.  
 Different from [MobilePose-pytorch](https://github.com/YuliangXiu/MobilePose-pytorch)(original repo), the command is  
-```python
- python train.py --model=[name_of_model_you_want_to_train] --retrain=[bool]
-```
+```python train.py --model=[name_of_model_you_want_to_train] --retrain=[bool]```
 
 If you want to train shufflenet, you can do it just change model name.  
 (i.e. ```python train.py --model=shufflenet```)  
