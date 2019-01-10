@@ -20,7 +20,7 @@ sudo /etc/init.d/dphys-swapfile start
 
 ## 2.Dependencies
 
-Firstly, install libraries.  
+Install libraries.  
 ```shell
 sudo apt-get install libopenblas-dev cython3 libatlas-dev \
     m4 libblas-dev cmake
@@ -58,6 +58,8 @@ print(torch.__version__)
 If you get something like ```0.2.0+0b92e5c```, you are successful!  
 
 ## Citations
+I mainly follwed 'Pytorch on RaspberryPi | 叶某人的碎碎念'.  
+If something goes wrong, please take a look on it.  
 
 Pytorch on RaspberryPi | 叶某人的碎碎念:  
 https://wormtooth.com/20180617-pytorch-on-raspberrypi/
