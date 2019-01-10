@@ -1,6 +1,6 @@
 # PyTorch Installation Guide  
 
-There are some documents about PyTorch installation into Raspberry Pi, but most of them are not straightforward for MobilePose-Pi.  
+There are some documents explaining PyTorch installation into Raspberry Pi, but most of them are not straightforward for this project.  
 Here, I explain my actual procedure and you can follow it.  
 
 ## 1.Swap  
@@ -10,6 +10,15 @@ Here, I explain my actual procedure and you can follow it.
 ## 3.Compilation
 
 ## 4.Check
+```shell
+cd ~ && python
+```
+Then, do this.
+```shell
+import torch
+print(torch.__version__)
+```
+If you get something like ```0.2.0+0b92e5c```, you are successful!  
 
 ## Citations
 
