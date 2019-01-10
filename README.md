@@ -4,7 +4,7 @@
  You can download this repo into Pi using ```git clone https://github.com/ba-san/MobilePose-Pi```.  
  Please note that this repo's size is around 80MB.
 ## Results
-*FPS is execution time of forward pass per image.
+*FPS is execution time of forward pass per image.  
 **Note**:As you can see, each model has room to be improved. I'd appreciated if there are any ideas or opinions!  
 
 1.0 ShufflenetV2: FPS is 1.09 and Model size is 5.3MB  
