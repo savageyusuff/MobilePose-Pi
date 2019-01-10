@@ -51,7 +51,7 @@ sudo -E python setup.py install
 cd ~ && python
 ```
 Then, do this.
-```shell
+```python
 import torch
 print(torch.__version__)
 ```
