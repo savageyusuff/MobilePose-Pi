@@ -120,7 +120,17 @@ Different from [MobilePose-pytorch](https://github.com/YuliangXiu/MobilePose-pyt
 
 If you want to train shufflenet, you can do it just change model name.  
 (i.e. ```python train.py --model=shufflenet```)  
- 
+
+## Model conversion
+For conversion, I mainly adopted [this tutorial](https://pytorch.org/tutorials/advanced/super_resolution_with_caffe2.html#transfering-srresnet-using-onnx).  
+I recommend to do this via conda.  
+
+1.You need to set up PC environment.  
+
+[Caffe2](https://caffe2.ai/docs/getting-started.html?platform=ubuntu&configuration=prebuilt)  
+[ONNX](https://github.com/onnx/onnx)  
+[PyTorch](https://github.com/pytorch/pytorch#from-source)  
+
 ## Citation
 
 Original Repo:  
