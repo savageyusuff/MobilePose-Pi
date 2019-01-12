@@ -2,7 +2,7 @@
 
  This is a deployment of [MobilePose-pytorch](https://github.com/YuliangXiu/MobilePose-pytorch) for Raspberry Pi.  
  You can download this repo into PC using ```git clone https://github.com/ba-san/MobilePose-Pi```.  
- Please note that this repo's size is around 80MB.
+
 ## Results
 *FPS is execution time of forward pass per image.  
 **Note**:As you can see, each model has room to be improved. I'd appreciated if there are any ideas or opinions!  
@@ -64,15 +64,6 @@ my environment([source](https://www.raspberrypi.org/products/raspberry-pi-2-mode
  Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets= 20 ] = 0.400
  ```
  
-## Things To Be Done  
-1.Add shufflenet result&training scripts--**Done**  
-2.Visualize results  
-3.Add my detailed experiment information    
-4.Deploy PyTorch model  
-5.Convert PyTorch to Caffe2 via ONNX  
-6.Scripts to run by Caffe2 (C++)  
-7.Add better instruction--**Done**  
- 
 ## Requirements
 
  Raspberry Pi (I used Pi 2 Model B for this repo)  
@@ -93,6 +84,7 @@ pip install -r requirements.txt
  
 ## Execution
 First of all, please put 'mobilepose-pi' directory on your Pi.
+Please note that this directory's size is around 80MB.
 
 For mobilenet:   
  ```shell
@@ -130,6 +122,15 @@ I recommend to do this via conda.
 [Caffe2](https://caffe2.ai/docs/getting-started.html?platform=ubuntu&configuration=prebuilt)  
 [ONNX](https://github.com/onnx/onnx)  
 [PyTorch](https://github.com/pytorch/pytorch#from-source)  
+
+## Things To Be Done  
+1.Add shufflenet result&training scripts--**Done**  
+2.Visualize results  
+3.Add my detailed experiment information    
+4.Deploy PyTorch model  
+5.Convert PyTorch to Caffe2 via ONNX  
+6.Scripts to run by Caffe2 (C++)  
+7.Add better instruction--**Done**  
 
 ## Citation
 
