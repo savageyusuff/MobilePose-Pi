@@ -24,7 +24,7 @@ Install libraries.
 ```shell
 sudo apt-get install libopenblas-dev cython3 libatlas-dev \
     m4 libblas-dev cmake python-setuptools python-cffi
-pip install --user pyyaml numpy mkl mkl-include typing
+pip install --user pyyaml numpy typing
 ```
 
 ## 3.PyTorch installation
