@@ -32,16 +32,18 @@ pip install --user pyyaml numpy
 Just follow below.  
 
 ```shell
-export NO_CUDA=1
-export NO_DISTRIBUTED=1
 git clone --recursive https://github.com/pytorch/pytorch
 cd pytorch
+git checkout tags/v1.0.0 -b build
+git submodule update --init --recursive
+export NO_CUDA=1
+export NO_DISTRIBUTED=1
 python setup.py build
 pip install --user wheel
 python setup.py bdist_wheel
 cd dist
 ls
-pip install --user torch-0.2.0+0b92e5c-cp27-cp27m-linux_armv7l.whl
+pip install --user torch-1.0.0-cp27-cp27m-linux_armv7l.whl
 cd ..
 sudo -E python setup.py install
 ```
