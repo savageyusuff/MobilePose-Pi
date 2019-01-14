@@ -38,6 +38,7 @@ git checkout tags/v1.0.0 -b build
 git submodule update --init --recursive
 export NO_CUDA=1
 export NO_DISTRIBUTED=1
+export NO_MKLDNN=1
 python setup.py build
 pip install --user wheel
 python setup.py bdist_wheel
