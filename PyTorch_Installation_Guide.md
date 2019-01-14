@@ -6,9 +6,9 @@ Here, I explain my actual procedure. So you can follow it.
 ## 1.Swap  
 At Pi terminal, open 'dphys-swapfile'.   
 ```shell
-nano /etc/dphys-swapfile
+sudo nano /etc/dphys-swapfile
 ```
-and change CONF_SWAPSIZE. (I suppose the default is set to 100.)  
+and change CONF_SWAPSIZE. (default is set to 100.)  
 ```shell
 CONF_SWAPSIZE=2048
 ```
