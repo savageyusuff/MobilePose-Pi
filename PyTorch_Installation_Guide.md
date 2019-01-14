@@ -1,7 +1,7 @@
 # PyTorch Installation Guide  
 
 There are some documents explaining PyTorch installation into Raspberry Pi, but most of them are not straightforward for this project.  
-Here, I explain my actual procedure and you can follow it.  
+Here, I explain my actual procedure. So you can follow it.  
 
 ## 1.Swap  
 At Pi terminal, open 'dphys-swapfile'.   
