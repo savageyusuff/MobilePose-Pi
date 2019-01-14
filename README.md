@@ -8,20 +8,30 @@
 **Note**:As you can see, each model has room to be improved. I'd appreciated if there are any ideas or opinions!  
 
 1.0 ShufflenetV2: FPS is 1.09 and Model size is 5.3MB  
-From [paper](https://arxiv.org/pdf/1807.11164.pdf), FPS is estimated around 1.8
+From [paper](https://arxiv.org/pdf/1807.11164.pdf), I will calculate estimated FPS.
 
 Author's environment:
 >ARM.
->A Qualcomm Snapdragon 810. We use a highly-optimized Neon-based
->implementation. A single thread is used for evaluation.
+> A Qualcomm Snapdragon 810. We use a highly-optimized Neon-based
+> implementation. A single thread is used for evaluation.
 ([ShuffleNet V2: Practical Guidelines for Efficient
 CNN Architecture Design](https://arxiv.org/pdf/1807.11164.pdf) p.3)  
+
+> 324~388.8GFLOPS  
+(https://gpuflops.blogspot.com/2015/02/gpu-flops-list.html?m=1)  
 
 my environment([source](https://www.raspberrypi.org/products/raspberry-pi-2-model-b/))　:
 >  A 900MHz quad-core ARM Cortex-A7 CPU  
 >  1GB RAM
 
-0.66*(24.4/8.9)=1.8  
+> Raspberry Pi 2 	Cortex-A7 	7.2 GFLOPS 	0.9GHz 	4 	8 	NEON: 2(mad) x1(simd) x4(core) x0.9(clock) = 7.2 GFLOPS  
+(https://dench.flatlib.jp/opengl/cpuflops)  
+
+24.4x(7.2GFLOPS/324GFLOPS)=0.54  
+
+Therefore, the estimated FPS is 0.54.  
+This is just a half of actual FPS(1.09).  
+I will continue to investigate to know the reason.  
 
 ```python 
  Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets= 20 ] = 0.000
