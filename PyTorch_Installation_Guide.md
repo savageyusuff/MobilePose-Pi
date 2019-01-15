@@ -10,7 +10,7 @@ sudo nano /etc/dphys-swapfile
 ```
 and change CONF_SWAPSIZE. (default is set to 100.)  
 ```shell
-CONF_SWAPSIZE=2048
+CONF_SWAPSIZE=4096
 ```
 Activate it.  
 ```shell
