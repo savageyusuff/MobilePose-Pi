@@ -136,12 +136,10 @@ I recommend to do this via conda.
 
 ## Things To Be Done  
 1.Add shufflenet result&training scripts--**Done**  
-2.Visualize results  
-3.Add my detailed experiment information    
-4.Deploy PyTorch model  
-5.Convert PyTorch to Caffe2 via ONNX  
-6.Scripts to run by Caffe2 (C++)  
-7.Add better instruction--**Done**  
+2.Add my detailed experiment information    
+3.Deploy PyTorch model  
+4.Convert PyTorch to Caffe2 via ONNX  
+5.Scripts to run by Caffe2 (C++)    
 
 ## Citation
 
