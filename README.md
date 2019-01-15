@@ -113,7 +113,7 @@ python eval.py --model shufflenet
  *I just reused the same models MobilePose-pytorch author provided. For shufflenet I used my original model.  
  Of course, you can use your own models also.
  
-**Note**: I use 20 images picked up from MPII randomly for test dataset.
+**Note**: I use 20 images picked up from [MPII](http://human-pose.mpi-inf.mpg.de/) randomly for test dataset.
  
 ## Training
 You can train three models (shufflenet/mobilenet/resnet) at your **PC**.  
