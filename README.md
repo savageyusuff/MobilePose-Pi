@@ -33,6 +33,7 @@ Therefore, the estimated FPS is 0.54.
 This is just a half of actual FPS(1.09).  
 I will continue to investigate to know the reason.  
 
+1.0 ShufflenetV2: FPS is 1.09 and Model size is 5.3MB  
 ```python 
  Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets= 20 ] = 0.000
  Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets= 20 ] = 0.000
