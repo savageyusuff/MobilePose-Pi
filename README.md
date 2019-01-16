@@ -82,17 +82,34 @@ I will continue to investigate to know the reason.
  Python 2.7  
 
 ## Installation
-Please install following things into your Pi.  
+  
+Before installation, please change swap size.
+
+At Pi terminal, open 'dphys-swapfile'.   
+```shell
+sudo nano /etc/dphys-swapfile
+```
+and change CONF_SWAPSIZE. (default is set to 100.)  
+```shell
+CONF_SWAPSIZE=2048
+```
+Activate it.  
+```shell
+sudo /etc/init.d/dphys-swapfile stop
+sudo /etc/init.d/dphys-swapfile start
+```
+Now you can install following things into your Pi.
 
 PyTorch-0.2.0(499MB) - Follow [my guide](https://github.com/ba-san/MobilePose-Pi/blob/master/PyTorch_Installation_Guide.md).  
 torchvision-0.2.1(2.7MB)  - Please install it from **source**. Repo is [here](https://github.com/pytorch/vision).  
-OpenCV-3.4.0(2.5GB) - You can refer to the installation guide matching your pi model from [this page](https://www.pyimagesearch.com/opencv-tutorials-resources-guides/).  
-For OpenCV I recommend try [this](https://www.pyimagesearch.com/2017/10/09/optimizing-opencv-on-the-raspberry-pi/) also for better performance.  
+OpenCV-3.4.0(2.5GB) - Follow [my guide](https://github.com/ba-san/MobilePose-Pi/blob/master/OpenCV_Installation_Guide.md).  
 
 Also, don't forget to install libraries.
 ```shell
 pip install -r requirements.txt
 ```
+
+At the end, change CONF_SWAPSIZE to 100 again.   
  
 ## Execution
 First of all, please put 'mobilepose-pi' directory on your Pi.
