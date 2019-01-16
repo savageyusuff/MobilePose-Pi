@@ -41,8 +41,10 @@ Different from this arcticle, I didn't install opencv-contrib.
 cd ~
 wget -O opencv.zip https://github.com/opencv/opencv/archive/3.4.0.zip
 unzip opencv.zip
+rm opencv.zip
 ```
 OK, you've downloaded OpenCV.
+This directory's size is around 1.8GB.  
 ```
 wget https://bootstrap.pypa.io/get-pip.py  
 sudo python get-pip.py  
