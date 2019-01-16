@@ -3,22 +3,7 @@
 There are some documents explaining PyTorch installation into Raspberry Pi, but most of them are not straightforward for this project.  
 Here, I explain my actual procedure. So you can follow it.  
 
-## 1.Swap  
-At Pi terminal, open 'dphys-swapfile'.   
-```shell
-sudo nano /etc/dphys-swapfile
-```
-and change CONF_SWAPSIZE. (default is set to 100.)  
-```shell
-CONF_SWAPSIZE=4096
-```
-Activate it.  
-```shell
-sudo /etc/init.d/dphys-swapfile stop
-sudo /etc/init.d/dphys-swapfile start
-```
-
-## 2.Dependencies
+## Dependencies
 
 Install libraries.  
 ```shell
@@ -27,7 +12,7 @@ sudo apt-get install libopenblas-dev cython3 libatlas-dev \
 pip install --user pyyaml numpy typing
 ```
 
-## 3.PyTorch installation
+## PyTorch installation
 
 Just follow below.  
 
@@ -49,7 +34,7 @@ cd ..
 sudo -E python setup.py install
 ```
 
-## 4.Check
+## Check
 ```shell
 cd ~ && python
 ```
