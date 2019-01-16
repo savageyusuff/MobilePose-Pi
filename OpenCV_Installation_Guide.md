@@ -8,12 +8,12 @@ I show my actual procedure here as I did PyTorch installation.
 ## Preparation for install  
 
 First of all, try  ```sudo raspi-config``` and expand your file system.  
-After this please reboot your pi. You just need to nput ```sudo reboot``` on terminal.  
+After this please reboot your pi. You just need to input ```sudo reboot``` on terminal.  
 (If you are using USB memory instead of SD card, you cannot expand file system, but it's ok.  
 Please go to next step right below.)  
 
 Uninstall unneeded things.  
-```
+```shell
 sudo apt-get purge wolfram-engine
 sudo apt-get purge libreoffice*
 sudo apt-get clean
@@ -22,7 +22,7 @@ sudo apt-get autoremove
 
 ## Install dependencies  
 I omit libraries for python3 from original guide.  
-```
+```shell
 sudo apt-get update && sudo apt-get upgrade  
 sudo apt-get install build-essential cmake pkg-config  
 sudo apt-get install libjpeg-dev libtiff5-dev libjasper-dev libpng12-dev  
@@ -36,8 +36,8 @@ sudo apt-get install python2.7-dev
 
 ## Install OpenCV-3.4.0  
 
-Different from this arcticle, I didn't install opencv-contrib.  
-```
+Different from original arcticle, I didn't install opencv-contrib.  
+```shell
 cd ~
 wget -O opencv.zip https://github.com/opencv/opencv/archive/3.4.0.zip
 unzip opencv.zip
@@ -45,14 +45,14 @@ rm opencv.zip
 ```
 OK, you've downloaded OpenCV.
 This directory's size is around 1.8GB.  
-```
+```shell
 wget https://bootstrap.pypa.io/get-pip.py  
 sudo python get-pip.py  
 sudo rm -rf ~/.cache/pip  
 pip install numpy  
 ```
 Now, we will build it.  
-```	
+```shell
 cd ~/opencv-3.4.0/  
 mkdir build  
 cd build  
@@ -65,11 +65,11 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE \
     -D BUILD_EXAMPLES=OFF ..  
 ```
 And install.  
-```    
+```shell    
 make -j4  
 ```
 This is the last commands for install.  
-```
+```shell
 sudo make install
 sudo ldconfig
 ```
