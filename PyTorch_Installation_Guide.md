@@ -42,6 +42,7 @@ sudo reboot now
 Install libraries.  
 ```shell
 sudo apt-get install libopenblas-dev libblas-dev m4 cmake cython python3-dev python3-yaml python3-setuptools
+pip3 install --user pyyaml numpy
 ```
 
 For this installation, we would be using Python 3 as the Pytorch developer recommends to do so. (There is currently some problems that are encountered using Python 2)
