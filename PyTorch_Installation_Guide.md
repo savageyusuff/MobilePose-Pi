@@ -62,6 +62,7 @@ export NO_QNNPACK=1
 python3 setup.py build
 sudo -E python3 setup.py install
 ```
+In case you want to reinstall, make sure that you uninstall PyTorch first by running ```pip3 uninstall torch``` and ```python3 setup.py clean```
 
 ## Check
 
