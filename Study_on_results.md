@@ -13,14 +13,16 @@ Author's environment:
 ([ShuffleNet V2: Practical Guidelines for Efficient
 CNN Architecture Design](https://arxiv.org/pdf/1807.11164.pdf) p.3)  
 
+Author uses Qualcomm Snapdragon 810. Therefore, we estimated their GFLOPS as around 300 from below webpage.  
 > 324~388.8GFLOPS  
 (https://gpuflops.blogspot.com/2015/02/gpu-flops-list.html?m=1)  
 
-my environment([source](https://www.raspberrypi.org/products/raspberry-pi-2-model-b/))　:
+
+My environment([source](https://www.raspberrypi.org/products/raspberry-pi-2-model-b/))　:
 >  A 900MHz quad-core ARM Cortex-A7 CPU  
 >  1GB RAM
 
-From our environment, we can estimate execution time.  
+We checked Pi FLOPs using ```lscpu```.  
 > pi@raspberrypi:~ $ lscpu  
 > Architecture:          armv7l  
 > Byte Order:            Little Endian  
@@ -36,6 +38,8 @@ From our environment, we can estimate execution time.
 > BogoMIPS:              38.40  
 > Flags:                 half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32  
 
+At Flags, you can see neon is activated.  
+
 > Raspberry Pi 2 	Cortex-A7 	4.8 GFLOPS 	0.6GHz 	4 	8 	NEON: 2(mad) x1(simd) x4(core) x0.6(clock) = 4.8 GFLOPS  
 (I referred here https://dench.flatlib.jp/opengl/cpuflops to derive estimation.)  
 
@@ -49,8 +53,8 @@ From [paper](https://arxiv.org/pdf/1807.11164.pdf), I will calculate estimated F
 The estimated FPS is 0.36.  
 However, this is just a third of actual FPS(1.09).  
 
-1.0 Mobilenet V2:  
 
+1.0 Mobilenet V2:  
 8.9x(4.8GFLOPS/324GFLOPS)=0.13  
 
 However, observed result is 0.66  
