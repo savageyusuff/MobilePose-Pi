@@ -1,7 +1,11 @@
 # PyTorch Installation Guide  
 
-There are some documents explaining PyTorch installation into Raspberry Pi, but most of them are not straightforward for this project.  
-Here, I explain my actual procedure. So you can follow it.  
+This is a documentation on how to install pytorch on Rapberry Pi.
+
+## Add SWAP memory
+
+
+
 
 ## Dependencies
 
@@ -46,11 +50,13 @@ print(torch.__version__)
 If you get something like ```0.2.0+0b92e5c```, you are successful!  
 
 ## Citations
-I mainly follwed 'Pytorch on RaspberryPi | 叶某人的碎碎念'.  
-If something goes wrong, please take a look on it.  
+The documentation is based on the following websites.
+
+Main Reference:
+https://medium.com/hardware-interfacing/how-to-install-pytorch-v4-0-on-raspberry-pi-3b-odroids-and-other-arm-based-devices-91d62f2933c7
 
 Pytorch on RaspberryPi | 叶某人的碎碎念:  
-https://wormtooth.com/20180617-pytorch-on-raspberrypi/
+https://wormtooth.com/20180617-pytorch-on-raspberrypi/ 
 
 [Raspbian][Pytorch]Raspberry Pi 3 Bに人工知能Pytorch入れてみた。:  
 https://tsumikiasobi.net/wordpress/?p=1839
