@@ -51,20 +51,15 @@ For this installation, we would be using Python 3 as the Pytorch developer recom
 Follow the steps below. Bare in mind that the installation takes a few hours when running the 'setup.py' script.
 
 ```shell
+mkdir pytorch_install && cd pytorch_install
 git clone --recursive https://github.com/pytorch/pytorch
 cd pytorch
-git checkout tags/v1.0.0 -b build
-git submodule update --init --recursive
 export NO_CUDA=1
 export NO_DISTRIBUTED=1
-export NO_MKLDNN=1
+export NO_MKLDNN=1 
+export NO_NNPACK=1
+export NO_QNNPACK=1
 python3 setup.py build
-pip3 install --user wheel
-python3 setup.py bdist_wheel
-cd dist
-ls
-pip3 install --user torch-1.0.0-cp27-cp27m-linux_armv7l.whl
-cd ..
 sudo -E python3 setup.py install
 ```
 
