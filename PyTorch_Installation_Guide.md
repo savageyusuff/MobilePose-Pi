@@ -1,6 +1,18 @@
 # PyTorch Installation Guide  
 
-This is a documentation on how to install pytorch on Rapberry Pi.
+This is a documentation on how to install the latest version of pytorch on Rapberry Pi.
+This instructions should work on any Raspbery Pi version.
+
+## Pre-Installation
+
+It is recommended to use a 16 GB or 32 GB SD card and load the latest version of the Raspian Pi OS.
+
+Before starting the installation, update and upgrade the OS and ensure that there is a text editor 
+install(vim,nano,gedit or other text editor). For this guide, we will be using nano.(nano should be 
+pre-installed in the OS)
+```shell
+sudo apt-get update && sudo apt-get upgrade
+```
 
 ## Add SWAP memory
 
@@ -52,7 +64,7 @@ If you get something like ```0.2.0+0b92e5c```, you are successful!
 ## Citations
 The documentation is based on the following websites.
 
-Main Reference:
+Main Reference:  
 https://medium.com/hardware-interfacing/how-to-install-pytorch-v4-0-on-raspberry-pi-3b-odroids-and-other-arm-based-devices-91d62f2933c7
 
 Pytorch on RaspberryPi | 叶某人的碎碎念:  
