@@ -5,7 +5,7 @@ This instructions should work on any Raspbery Pi version.
 
 ## Pre-Installation
 
-It is recommended to use a 16 GB or 32 GB SD card and load the latest version of the [Raspian Pi OS](https://www.raspberrypi.org/downloads/raspbian/).
+It is recommended to use a 16 GB or 32 GB SD card and load the latest version of the [Raspian OS](https://www.raspberrypi.org/downloads/raspbian/).
 
 Before starting the installation, update and upgrade the OS and ensure that there is a text editor 
 install(vim,nano,gedit or other text editor). For this guide, we will be using nano.(nano should be 
@@ -16,21 +16,39 @@ sudo apt-get update && sudo apt-get upgrade
 
 ## Add SWAP memory
 
+To prevent any occurance of ‘Memory exhausted’ or ‘Cannot Allocate Memory’, we would need to increase the swap memory.
+```shell
+sudo dd if=/dev/zero of=/swap1 bs=1M count=2048
+sudo mkswap /swap1
+sudo nano /etc/fstab
+```
+This will open up the fstab file. You may or may not have a swap file. If you see a line of code like,
+```shell
+/swap0 swap swap
+```
+You already had a swap. Replace that line with the line of code below. If you dont, add the line of code below.
+```shell
+/swap1 swap swap
+```
 
+Reboot your machine so that raspberry pi recognize the new swap space
+```shell
+sudo reboot now
+```
 
 
 ## Dependencies
 
 Install libraries.  
 ```shell
-sudo apt-get install libopenblas-dev cython3 libatlas-dev \
-    m4 libblas-dev cmake python-setuptools python-cffi
-pip install --user pyyaml numpy typing
+sudo apt-get install libopenblas-dev libblas-dev m4 cmake cython python3-dev python3-yaml python3-setuptools
 ```
+
+For this installation, we would be using Python 3 as the Pytorch developer recommends to do so. (There is currently some problems that are encountered using Python 2)
 
 ## PyTorch installation
 
-Just follow below.  
+Follow the steps below. Bare in mind that the installation takes a few hours when running the 'setup.py' script.
 
 ```shell
 git clone --recursive https://github.com/pytorch/pytorch
@@ -40,26 +58,27 @@ git submodule update --init --recursive
 export NO_CUDA=1
 export NO_DISTRIBUTED=1
 export NO_MKLDNN=1
-python setup.py build
-pip install --user wheel
-python setup.py bdist_wheel
+python3 setup.py build
+pip3 install --user wheel
+python3 setup.py bdist_wheel
 cd dist
 ls
-pip install --user torch-1.0.0-cp27-cp27m-linux_armv7l.whl
+pip3 install --user torch-1.0.0-cp27-cp27m-linux_armv7l.whl
 cd ..
-sudo -E python setup.py install
+sudo -E python3 setup.py install
 ```
 
 ## Check
+
+Once the installation is complete, check if the installation is successful by checking the Pytorch version.
+
 ```shell
-cd ~ && python
-```
-Then, do this.
-```shell
+cd ~ && python3
 import torch
 print(torch.__version__)
 ```
-If you get something like ```0.2.0+0b92e5c```, you are successful!  
+
+If you get something like ```1.0.0+0b92e5c```, your installation is successful.  
 
 ## Citations
 The documentation is based on the following websites.
