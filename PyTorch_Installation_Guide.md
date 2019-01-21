@@ -5,7 +5,7 @@ This instructions should work on any Raspbery Pi version.
 
 ## Pre-Installation
 
-It is recommended to use a 16 GB or 32 GB SD card and load the latest version of the Raspian Pi OS.
+It is recommended to use a 16 GB or 32 GB SD card and load the latest version of the [Raspian Pi OS](https://www.raspberrypi.org/downloads/raspbian/).
 
 Before starting the installation, update and upgrade the OS and ensure that there is a text editor 
 install(vim,nano,gedit or other text editor). For this guide, we will be using nano.(nano should be 
