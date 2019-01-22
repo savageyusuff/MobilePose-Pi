@@ -97,15 +97,15 @@ Please note that this directory's size is around 80MB.
 
 For mobilenet:   
  ```shell
-python eval.py --model mobilenet
+python eval_pc.py --model mobilenet
 ```
 For resnet:  
 ```shell
-python eval.py --model resnet
+python eval_pc.py --model resnet
 ```
 For shufflenet:  
 ```shell
-python eval.py --model shufflenet
+python eval_pc.py --model shufflenet
 ```
  
  *I just reused the same models MobilePose-pytorch author provided. For shufflenet I used my original model.  
