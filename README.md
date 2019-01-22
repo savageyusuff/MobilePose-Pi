@@ -3,6 +3,11 @@
  This is a deployment of [MobilePose-pytorch](https://github.com/YuliangXiu/MobilePose-pytorch) for Raspberry Pi.  
  You can download this repo into PC using ```git clone https://github.com/ba-san/MobilePose-Pi```.  
 
+## Architecture  
+
+
+
+
 ## Results
 *FPS is execution time of forward pass per image.  
 **Note**:As you can see, each model has room to be improved. I'd appreciated if any ideas or opinions provided!  
