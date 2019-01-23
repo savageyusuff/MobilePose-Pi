@@ -8,9 +8,9 @@
 |  Files  |  Explanation  |
 | ---- | ---- |
 |  cocoapi  |  this is from https://github.com/cocodataset/cocoapi  |
-|  mobilepose-pi  |  run file for mobile device  |
-|  models  |  pretrained models  |
-|  pose_dataset  |  MPII dataset  |
+|  mobilepose-pi  |  execution directory for Raspberry Pi  |
+|  models  |  pretrained models (.t7) are stored |
+|  pose_dataset  |  MPII dataset (csv files)  |
 |  results  |  keypoints of each model's grountruth & prediction  |
 |  OpenCV_Installation_Guide.md  |  OpenCV installation guide  |
 |  PyTorch_Installation_Guide.md  |  PyTorch installation guide  |
@@ -23,12 +23,11 @@
 |  estimator.py  |  this is for run_webcam.py  |
 |  eval_pc.py  |  scripts to evaluate each model  |
 |  mobilenetv2.py  |  network architecture of MobilenetV2  |
-|  networks.py  |  get model's path and input's height&wid & network architecture of Resnet  |
+|  networks.py  |  get model's path and input's height & width <br> network architecture of Resnet  |
 |  pycocotools  |  link to cocoapi/PythonAPI/pycocotools  |
 |  requirements.txt  |  libraries needed to run scripts  |
 |  run_webcam.py  |  real-time pose estimation using webcam  |
 |  training.py  |  training models  |
-
 
 **Note**: MPII is used for training and COCO is used for evaluation.  
 
@@ -98,7 +97,7 @@ For shufflenet:
 python eval_pc.py --model shufflenet
 ```
  
- *I just reused the same models MobilePose-pytorch author provided. For shufflenet I used my original model.  
+ *I just reused the same pretrained models MobilePose-pytorch author provided. For shufflenet I used my original model.  
  Of course, you can use your own models also.  
  
  You can try real-time estimation using 'run_webcam.py'  
