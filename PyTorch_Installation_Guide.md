@@ -37,7 +37,6 @@ Reboot your machine so that raspberry pi recognize the new swap space
 sudo reboot now
 ```
 
-
 ## Dependencies
 
 Install libraries.  
@@ -64,7 +63,7 @@ export NO_QNNPACK=1
 python3 setup.py build && python3 setup.py bdist_wheel
 cd dist
 ls
-pip3 install --user torch-0.5.0a0+0262fd0-cp35-cp35m-linux_armv7l.whl
+pip3 install --user torch-1.1.0a0+dfcafb1-cp35-cp35m-linux_armv7l.whl
 cd ..
 sudo -E python3 setup.py install
 ```
@@ -80,7 +79,7 @@ import torch
 print(torch.__version__)
 ```
 
-If you get something like ```1.0.0+0b92e5c```, your installation is successful.  
+If you get something like ```1.1.0a0+dfcafb1```, your installation is successful.  
 
 ## Citations
 The documentation is based on the following websites.
