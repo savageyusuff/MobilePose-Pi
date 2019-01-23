@@ -29,6 +29,10 @@ from pycocotools.coco import COCO
 from pycocotools.cocoeval import COCOeval
 from dataset_factory import DatasetFactory
 
+from functools import partial
+import pickle
+
+
 gpus = [0,1]
 os.environ["CUDA_VISIBLE_DEVICES"]="0"
 torch.backends.cudnn.enabled = True
@@ -51,19 +55,19 @@ if __name__ == '__main__':
     ROOT_DIR = "./dataset"
     
     if modeltype == 'resnet':
-        full_name = "/change/path/to/mobilepose-pi/models/resnet18_227x227-robust.t7" # Rescale Expansion ToTensor
+        full_name = "./models/resnet18_227x227-robust.t7" # Rescale Expansion ToTensor
         input_size = 227
       
         test_dataset = DatasetFactory.get_test_dataset(modeltype, input_size)
 
     elif modeltype == 'mobilenet':
-        full_name = "/change/path/to/mobilepose-pi/models/mobilenetv2_224x224-robust.t7" # Wrap Expansion ToTensor
+        full_name = "./models/mobilenetv2_224x224-robust.t7" # Wrap Expansion ToTensor
         input_size = 224
  
         test_dataset = DatasetFactory.get_test_dataset(modeltype, input_size)
 
     elif modeltype == 'shufflenet':
-        full_name = "/change/path/to/mobilepose-pi/models/shufflenetv2_224x224.t7" # Wrap Expansion ToTensor
+        full_name = "./models/shufflenetv2_224x224.t7" # Wrap Expansion ToTensor
         input_size = 224
  
         test_dataset = DatasetFactory.get_test_dataset(modeltype, input_size)
@@ -92,8 +96,11 @@ if __name__ == '__main__':
         #net.eval()
 
         # cpu mode
+        pickle.load = partial(pickle.load, encoding="latin1") # code added to interface to python3 
+        pickle.Unpickler = partial(pickle.Unpickler, encoding="latin1") # code added to interface to python3 
+        # model = torch.load(model_file, map_location=lambda storage, loc: storage, pickle_module=pickle)
         net = Net()
-        net = torch.load(net_path, map_location=lambda storage, loc: storage)
+        net = torch.load(net_path, map_location=lambda storage, loc: storage, pickle_module=pickle)
 
         ## generate groundtruth json
         total_size = len(all_test_data['image'])
