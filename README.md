@@ -5,8 +5,29 @@
 
 ## Architecture  
 
+ cocoapi 	                         this is from https://github.com/cocodataset/cocoapi  
+	mobilepose-pi 	                   run file for mobile device  
+	models 	                          pretrained models  
+	pose_dataset 	                    mpii dataset  
+	results 	                         keypoints of each model's groundtruth & prediction  
+	OpenCV_Installation_Guide.md 	    OpenCV installation guide  
+	PyTorch_Installation_Guide.md 	   PyTorch installation guide  
+	README.md 	                       general explanation about this repo  
+	ShuffleNetV2.py 	                 network architecture of ShufflenetV2  
+	Study_on_results.md 	             study on validation of our results  
+	coco_utils.py 	                   generating groundtruth&prediction json files  
+	dataloader.py                     multi-thread dataloader with augmentations  
+	dataset_factory.py 	              get dataset's keypoint from csv files  
+	estimator.py 	                    this is for run_webcam.py  
+	eval_pc.py 	                      scripts to evaluate each model  
+	mobilenetv2.py 	                  network architecture of MobilenetV2  
+	networks.py 	                     get model's path and input's height&wid & network architecture of Resnet  
+	pycocotools                       link to cocoapi/PythonAPI/pycocotools  
+	requirements.txt 	                libraries needed to run scripts here  
+	run_webcam.py 	                   real-time pose estimation using webcam  
+	training.py                       training models  
 
-
+Note: MPII is used for training and COCO is used for evaluation.  
 
 ## Results
 *FPS is execution time of forward pass per image.  
@@ -116,6 +137,10 @@ python eval_pc.py --model shufflenet
 ## Training
 You can train three models (shufflenet/mobilenet/resnet) at your **PC**.  
 For instllation, please follow instructions written in there.  
+
+You need to download mpii training [Images(12.9GB)](https://datasets.d2.mpi-inf.mpg.de/andriluka14cvpr/mpii_human_pose_v1.tar.gz). This is from [here](http://human-pose.mpi-inf.mpg.de/#download).  
+After extraction, please set ROOT_DIR at dataloader.py line.197  
+
 Different from [MobilePose-pytorch](https://github.com/YuliangXiu/MobilePose-pytorch)(original repo), the command is  
 ```python train.py --model=[name_of_model_you_want_to_train] --retrain=[bool]```
 
