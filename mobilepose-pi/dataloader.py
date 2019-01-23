@@ -166,7 +166,7 @@ class PoseDataset(Dataset):
         return len(self.f_csv)
         
     def __getitem__(self, idx):
-        ROOT_DIR = "/change/path/to/MobilePose-Pi/dataset/"
+        ROOT_DIR = "./dataset/"
         line = self.f_csv[idx][0].split(",")
         #print(line)
         img_path = os.path.join(ROOT_DIR,'images',line[0])
