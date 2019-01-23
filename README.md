@@ -19,7 +19,7 @@
 |  Study_on_results.md  |  study on validation of our results  |
 |  coco_utils.py  |  generating groundtruth&prediction json files  |
 |  dataloader.py  |  multi-thread dataloader with augmentations  |
-|  dataset_factory.p  |  get dataset's keypoint from csv files  |
+|  dataset_factory.py  |  get dataset's keypoint from csv files  |
 |  estimator.py  |  this is for run_webcam.py  |
 |  eval_pc.py  |  scripts to evaluate each model  |
 |  mobilenetv2.py  |  network architecture of MobilenetV2  |
@@ -40,6 +40,7 @@
 |  1.0 ShufflenetV2  |  1.09  |  5.3  |  0.000  |
 |  1.0 MobilenetV2  |  0.66  |  9.3  |  0.045  |
 |  Resnet18  |  0.39  |  44.9  |  0.257  |
+
 *FPS is execution time of forward pass per image.
 
  You can get more detailed info for this results [here](https://github.com/ba-san/MobilePose-Pi/blob/master/Study_on_results.md).  
@@ -97,7 +98,8 @@ For shufflenet:
 python eval_pc.py --model shufflenet
 ```
  
- *I just reused the same pretrained models MobilePose-pytorch author provided. For shufflenet I used my original model.  
+ *I just reused the same pretrained models MobilePose-pytorch author provided.  
+ For shufflenet I used my original model.  
  Of course, you can use your own models also.  
  
  You can try real-time estimation using 'run_webcam.py'  
