@@ -3,7 +3,7 @@
  This is a deployment of [MobilePose-pytorch](https://github.com/YuliangXiu/MobilePose-pytorch) for Raspberry Pi.  
  You can download this repo into PC using ```git clone https://github.com/ba-san/MobilePose-Pi```.  
 
-## Architecture  
+## Structure  
 
 |  Files  |  Explanation  |
 | ---- | ---- |
@@ -30,28 +30,29 @@
 |  training.py  |  training models  |
 
 
-Note: MPII is used for training and COCO is used for evaluation.  
+**Note**: MPII is used for training and COCO is used for evaluation.  
 
 ## Results
-*FPS is execution time of forward pass per image.  
-**Note**:As you can see, each model has room to be improved. I'd appreciated if any ideas or opinions provided!  
+  
+**Note**:As you can see, each model has room to be improved. Any ideas or opinions are welcome!  
 
 |  Network  |  FPS  |  Size(MB)  |  mAP  |
 | ---- | ---- | ---- | ---- |
 |  1.0 ShufflenetV2  |  1.09  |  5.3  |  0.000  |
 |  1.0 MobilenetV2  |  0.66  |  9.3  |  0.045  |
 |  Resnet18  |  0.39  |  44.9  |  0.257  |
+*FPS is execution time of forward pass per image.
 
  You can get more detailed info for this results [here](https://github.com/ba-san/MobilePose-Pi/blob/master/Study_on_results.md).  
  
 ## Requirements
+For 'mobilepose-pi', you need following environment.
 
  Raspberry Pi (I used Pi 2 Model B for this repo)  
  Rasbian stretch (32bit)  
  Python 2.7  
 
 ## Installation
-  
 Before installation, please change swap size.
 
 At Pi terminal, open 'dphys-swapfile'.   
@@ -110,7 +111,6 @@ Currently, this doesn't support shufflenet.
  
 ## Training
 You can train three models (shufflenet/mobilenet/resnet) at your **PC**.  
-For instllation, please follow instructions written in there.  
 
 You need to download MPII training [Images(12.9GB)](https://datasets.d2.mpi-inf.mpg.de/andriluka14cvpr/mpii_human_pose_v1.tar.gz). This is from [here](http://human-pose.mpi-inf.mpg.de/#download).  
 After extraction, please set ROOT_DIR at dataloader.py (line.197).  
