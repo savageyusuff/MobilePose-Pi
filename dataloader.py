@@ -194,7 +194,7 @@ class PoseDataset(Dataset):
         return len(self.f_csv)
         
     def __getitem__(self, idx):
-        ROOT_DIR = "/media/daisuke/New_Volume/users/daisuke/dataset/mpii"
+        ROOT_DIR = "/path/to/your/mpii_human_pose_v1"
         line = self.f_csv[idx][0].split(",")
         #print(line)
         img_path = os.path.join(ROOT_DIR,'images',line[0])

@@ -172,7 +172,6 @@ class PoseDataset(Dataset):
         img_path = os.path.join(ROOT_DIR,'images',line[0])
         image = io.imread(img_path)
         height, width = image.shape[0], image.shape[1]
-        #pose = np.array([float(item) for item in line[1:]]).reshape([-1,2])    #!!ayashii
         pose = np.array([float(item) for item in line[1:]]).reshape([-1,2])
         #print('x:', pose[:,0])
         #print('y:', pose[:,1])

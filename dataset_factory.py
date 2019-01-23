@@ -33,7 +33,7 @@ class DatasetFactory:
         DataFactory.get_train_dataset("resnet", 224)
         In debug mode, it will return a small dataset
         """
-        csv_name = "train_joints_psl.csv"  #target
+        csv_name = "train_joints.csv"  #target
         if debug:
             csv_name = "train_joints-500.csv"
 

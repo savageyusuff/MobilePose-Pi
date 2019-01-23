@@ -274,3 +274,4 @@
 [epoch 547] train loss: 379.19234811, valid loss: 6824.40308707
 [epoch 1] train loss: 16512.82221350, valid loss: 13574.38158308
 [epoch 1] train loss: 16526.56265639, valid loss: 13582.26815360
+[epoch 1] train loss: 14412.13847726, valid loss: 13733.15910121

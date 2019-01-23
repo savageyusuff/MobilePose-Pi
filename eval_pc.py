@@ -50,19 +50,19 @@ if __name__ == '__main__':
     ROOT_DIR = "../deeppose_tf/datasets/mpii"
     
     if modeltype == 'resnet':
-        full_name = "/home/daisuke/MobilePose-pytorch/models/demo/resnet18_227x227.t7" # Rescale Expansion ToTensor
+        full_name = "./models/demo/resnet18_227x227.t7" # Rescale Expansion ToTensor
         input_size = 227
       
         test_dataset = DatasetFactory.get_test_dataset(modeltype, input_size)
 
     elif modeltype == 'mobilenet':
-        full_name = "/home/daisuke/MobilePose-pytorch/models/demo/mobilenetv2_224x224-robust.t7" # Wrap Expansion ToTensor
+        full_name = "./models/demo/mobilenetv2_224x224-robust.t7" # Wrap Expansion ToTensor
         input_size = 224
  
         test_dataset = DatasetFactory.get_test_dataset(modeltype, input_size)
 
     elif modeltype == 'shufflenet':
-        full_name = "/home/daisuke/MobilePose-pytorch-/models/demo/shufflenetv2_224x224.t7" # Wrap Expansion ToTensor
+        full_name = "./models/demo/shufflenetv2_224x224.t7" # Wrap Expansion ToTensor
         input_size = 224
  
         test_dataset = DatasetFactory.get_test_dataset(modeltype, input_size)

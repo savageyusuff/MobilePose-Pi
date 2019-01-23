@@ -80,7 +80,7 @@ if __name__ == '__main__':
 
     net = net.train()
 
-    ROOT_DIR = "../deeppose_tf/datasets/mpii" # root dir to the dataset
+    ROOT_DIR = "./pose_dataset/mpii" # root dir to the dataset
     PATH_PREFIX = './models/{}/'.format(modeltype) # path to save the model
 
     train_dataset = DatasetFactory.get_train_dataset(modeltype, inputsize)
@@ -114,8 +114,7 @@ if __name__ == '__main__':
             images, poses = Variable(images.cuda()), Variable(poses.cuda())
             optimizer.zero_grad()
             outputs = net(images)
-            loss = criterion(outputs[:,:16], poses) #modified by oba. change the output to fit poses' shape. original is criterion(outputs, poses)
-            #loss = criterion(outputs, poses)
+            loss = criterion(outputs, poses)
             loss.backward()
             optimizer.step()
 
