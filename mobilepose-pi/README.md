@@ -13,8 +13,13 @@ sudo apt-get install libjpeg-dev libtiff5-dev libjasper-dev libpng12-dev ## Depe
 sudo apt-get install libatlas3-base libsz2 libharfbuzz0b libtiff5 libjasper1 libilmbase12 libopenexr22 libilmbase12 libgstreamer1.0-0 libavcodec57 libavformat57 libavutil55 libswscale4 libqtgui4 libqt4-test libqtcore4 ## Depedencies for opencv
 sudo apt-get install libgeos-dev
 pip3 install imgaug
-pip3 install torchvision-raspi
 pip3 install pycocotools
+```
+Installing torchvision from source  
+```shell
+git clone --recursive https://github.com/pytorch/vision
+cd vision
+python3 setup.py install
 ```
 
 ## Error Encountered currently.  
