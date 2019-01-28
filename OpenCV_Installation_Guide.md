@@ -1,9 +1,8 @@
 
 # OpenCV Installation Guide
 
-Almost all codes here are just borrowed from [this article](https://www.pyimagesearch.com/2017/10/09/optimizing-opencv-on-the-raspberry-pi/).  
-However, I modifed some parts to fit this deployment.  
-I show my actual procedure here as I did PyTorch installation.  
+Most of the steps to downloading OpenCV from source is reference from this article [this article](https://www.pyimagesearch.com/2017/10/09/optimizing-opencv-on-the-raspberry-pi/).  
+ 
 
 ## Preparation for install  
 
