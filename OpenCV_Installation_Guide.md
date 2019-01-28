@@ -1,7 +1,8 @@
 
 # OpenCV Installation Guide
 
-Most of the steps to downloading OpenCV from source is reference from this article [this article](https://www.pyimagesearch.com/2017/10/09/optimizing-opencv-on-the-raspberry-pi/).  
+Most of the steps to downloading OpenCV from source is reference from [this article] (https://www.pyimagesearch.com/2018/09/26/install-opencv-4-on-your-raspberry-pi/)
+& [this article](https://www.pyimagesearch.com/2017/10/09/optimizing-opencv-on-the-raspberry-pi/).  
  
 
 ## Preparation for install  
