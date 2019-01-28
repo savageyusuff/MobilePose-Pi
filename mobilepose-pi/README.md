@@ -4,14 +4,13 @@
 
 Install libraries.  
 ```shell
-pip3 install tqdm
 sudo apt-get install libatlas-base-dev
-pip3 install scikit-image
-pip3 install scipy matplotlib
-pip3 install opencv-python
 sudo apt-get install libjpeg-dev libtiff5-dev libjasper-dev libpng12-dev ## Depedencies for opencv
 sudo apt-get install libatlas3-base libsz2 libharfbuzz0b libtiff5 libjasper1 libilmbase12 libopenexr22 libilmbase12 libgstreamer1.0-0 libavcodec57 libavformat57 libavutil55 libswscale4 libqtgui4 libqt4-test libqtcore4 ## Depedencies for opencv
 sudo apt-get install libgeos-dev
+pip3 install tqdm
+pip3 install scikit-image
+pip3 install scipy matplotlib
 pip3 install imgaug
 pip3 install pycocotools
 ```
@@ -21,8 +20,9 @@ git clone --recursive https://github.com/pytorch/vision
 cd vision
 python3 setup.py install
 ```
+Installing opencv from [source](https://github.com/savageyusuff/MobilePose-Pi/blob/master/OpenCV_Installation_Guide.md)
 
-## Error Encountered currently.  
+## Log file while running eval.py.  
 ```shell
 0
 Loading testing dataset, wait...
