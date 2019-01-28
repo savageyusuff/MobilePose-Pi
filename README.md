@@ -72,7 +72,7 @@ Now you can install following things into your Pi.
 
 PyTorch-0.2.0(499MB) - Follow [my guide](https://github.com/ba-san/MobilePose-Pi/blob/master/PyTorch_Installation_Guide.md).  
 torchvision-0.2.1(2.7MB)  - Please install it from **source**. Repo is [here](https://github.com/pytorch/vision).  
-OpenCV-3.4.0(1.8GB) - Follow [my guide](https://github.com/ba-san/MobilePose-Pi/blob/master/OpenCV_Installation_Guide.md).  
+OpenCV-3.4.0(1.8GB) - Follow [my guide](https://www.pyimagesearch.com/2018/09/26/install-opencv-4-on-your-raspberry-pi/).  
 
 Also, don't forget to install libraries.
 ```shell
