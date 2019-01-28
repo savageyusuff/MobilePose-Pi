@@ -1,9 +1,7 @@
 
 # OpenCV Installation Guide
-
-Most of the steps to downloading OpenCV from source is reference from [this article] (https://www.pyimagesearch.com/2018/09/26/install-opencv-4-on-your-raspberry-pi/)
-& [this article](https://www.pyimagesearch.com/2017/10/09/optimizing-opencv-on-the-raspberry-pi/).  
  
+This guide will show you how to install the latest version of OpenCV from source from Raspberry Pi platform. 
 
 ## Preparation for install  
 
@@ -34,7 +32,7 @@ sudo apt-get install libatlas-base-dev gfortran
 sudo apt-get install python2.7-dev  
 ```
 
-## Install OpenCV-3.4.0  
+## Install OpenCV-4.0.0  
 
 Different from original arcticle, I didn't install opencv-contrib.  
 ```shell
@@ -81,9 +79,9 @@ Check whether OpenCV is installed correctly folling the command below.
 $ python  
 >>> import cv2
 >>> cv2.__version__
-'3.4.0'
+'4.0.0'
 ```
 
 ## Reference  
 Optimizing OpenCV on the Raspberry Pi:  
-https://www.pyimagesearch.com/2017/10/09/optimizing-opencv-on-the-raspberry-pi/ 
+https://www.pyimagesearch.com/2018/09/26/install-opencv-4-on-your-raspberry-pi/
