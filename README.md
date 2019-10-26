@@ -41,8 +41,6 @@
 |  1.0 MobilenetV2  |  0.66  |  9.3  |  0.045  |
 |  Resnet18  |  0.39  |  44.9  |  0.257  |
 
-*FPS is execution time of forward pass per image.
-
  You can get more detailed info for this results [here](https://github.com/ba-san/MobilePose-Pi/blob/master/Study_on_results.md).  
  
 ## Requirements
