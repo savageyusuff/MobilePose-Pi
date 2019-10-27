@@ -106,10 +106,10 @@ python eval_pc.py --model shufflenet
  ```shell
 python run_webcam.py --model [name of model]
 ```
-Currently, this doesn't support shufflenet.  
+Currently, run_webcam.py doesn't support shufflenet.  
  
 ## Training
-You can train three models (shufflenet/mobilenet/resnet) at your **PC**.  
+You can train three models (shufflenet/mobilenet/resnet) on your **PC**.  
 
 You need to download MPII training [Images(12.9GB)](https://datasets.d2.mpi-inf.mpg.de/andriluka14cvpr/mpii_human_pose_v1.tar.gz). This is from [here](http://human-pose.mpi-inf.mpg.de/#download).  
 After extraction, please set ROOT_DIR at dataloader.py (line.197).  
