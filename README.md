@@ -44,7 +44,7 @@
 ## Requirements
 For 'mobilepose-pi', you need following environment.
 
- Raspberry Pi (I used Pi 2 Model B for this repo)  
+ Raspberry Pi (We used Pi 2 Model B for this repo)  
  Rasbian stretch (32bit)  
  Python 2.7  
 
@@ -68,7 +68,7 @@ Now you can install following things into your Pi.
 
 PyTorch-0.2.0(499MB) - Follow [my guide](https://github.com/savageyusuff/MobilePose-Pi/blob/master/PyTorch_Installation_Guide.md).  
 torchvision-0.2.1(2.7MB)  - Please install it from **source**. Repo is [here](https://github.com/pytorch/vision).  
-OpenCV-3.4.0(1.8GB) - Follow [my guide](https://www.pyimagesearch.com/2018/09/26/install-opencv-4-on-your-raspberry-pi/).  
+OpenCV-3.4.0(1.8GB) - Follow [this guide](https://www.pyimagesearch.com/2018/09/26/install-opencv-4-on-your-raspberry-pi/).  
 
 Also, don't forget to install libraries.
 ```shell
@@ -129,13 +129,6 @@ I recommend to do this via conda.
 [Caffe2](https://caffe2.ai/docs/getting-started.html?platform=ubuntu&configuration=prebuilt)  
 [ONNX](https://github.com/onnx/onnx)  
 [PyTorch](https://github.com/pytorch/pytorch#from-source)  
-
-## Things To Be Done  
-1.Add shufflenet result&training scripts--**Done**  
-2.Add my detailed experiment information    
-3.Deploy PyTorch model  
-4.Convert PyTorch to Caffe2 via ONNX  
-5.Scripts to run by Caffe2 (C++)    
 
 ## Citation
 
