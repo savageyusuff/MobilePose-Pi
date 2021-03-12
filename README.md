@@ -1,7 +1,5 @@
 # MobilePose-Pi
-
  This is a deployment of [MobilePose-pytorch](https://github.com/YuliangXiu/MobilePose-pytorch) for Raspberry Pi.  
- You can download this repo into PC using ```git clone https://github.com/ba-san/MobilePose-Pi```.  
 
 ## Structure  
 
@@ -41,7 +39,7 @@
 |  1.0 MobilenetV2  |  0.66  |  9.3  |  0.045  |
 |  Resnet18  |  0.39  |  44.9  |  0.257  |
 
- You can get more detailed info for this results [here](https://github.com/ba-san/MobilePose-Pi/blob/master/Study_on_results.md).  
+ You can get more detailed info for this results [here](https://github.com/savageyusuff/MobilePose-Pi/blob/master/Study_on_results.md).  
  
 ## Requirements
 For 'mobilepose-pi', you need following environment.
@@ -68,7 +66,7 @@ sudo /etc/init.d/dphys-swapfile start
 ```
 Now you can install following things into your Pi.
 
-PyTorch-0.2.0(499MB) - Follow [my guide](https://github.com/ba-san/MobilePose-Pi/blob/master/PyTorch_Installation_Guide.md).  
+PyTorch-0.2.0(499MB) - Follow [my guide](https://github.com/savageyusuff/MobilePose-Pi/blob/master/PyTorch_Installation_Guide.md).  
 torchvision-0.2.1(2.7MB)  - Please install it from **source**. Repo is [here](https://github.com/pytorch/vision).  
 OpenCV-3.4.0(1.8GB) - Follow [my guide](https://www.pyimagesearch.com/2018/09/26/install-opencv-4-on-your-raspberry-pi/).  
 
