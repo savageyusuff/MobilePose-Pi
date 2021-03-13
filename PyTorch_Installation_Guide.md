@@ -2,7 +2,7 @@
 
 
 This is a documentation on how to install the latest version of pytorch on Rapberry Pi.
-This instructions should work on any Raspbery Pi version. [This guide is still under edit,use with caution]
+This instructions should work on any Raspbery Pi version. This guide is, however, still under edit. Use with caution.
 
 ## Pre-Installation
 
