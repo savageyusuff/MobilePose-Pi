@@ -1,16 +1,16 @@
 
 # OpenCV Installation Guide
  
-This guide will show you how to install the latest version of OpenCV from source from Raspberry Pi platform. 
+This guide will show you how to install the latest version of OpenCV from source at Raspberry Pi platform. 
 
 ## Preparation for install  
 
 First of all, try  ```sudo raspi-config``` and expand your file system.  
-After this please reboot your pi. You just need to input ```sudo reboot``` on terminal.  
+After this please reboot your raspi. You just need to input ```sudo reboot``` on terminal.  
 (If you are using USB memory instead of SD card, you cannot expand file system, but it's ok.  
-Please go to next step right below.)  
+Please go to next step.)  
 
-Uninstall unneeded things.  
+Uninstall unneeded packages.  
 ```shell
 sudo apt-get purge wolfram-engine
 sudo apt-get purge libreoffice*
@@ -19,7 +19,6 @@ sudo apt-get autoremove
 ```
 
 ## Install dependencies  
-I omit libraries for python3 from original guide.  
 ```shell
 sudo apt-get update && sudo apt-get upgrade  
 sudo apt-get install build-essential cmake pkg-config  
@@ -33,8 +32,6 @@ sudo apt-get install python2.7-dev
 ```
 
 ## Install OpenCV-4.0.0  
-
-Different from original arcticle, I didn't install opencv-contrib.  
 ```shell
 cd ~
 wget -O opencv.zip https://github.com/opencv/opencv/archive/3.4.0.zip
@@ -49,7 +46,7 @@ sudo python get-pip.py
 sudo rm -rf ~/.cache/pip  
 pip install numpy  
 ```
-Now, we will build it.  
+Now, we build it.  
 ```shell
 cd ~/opencv-3.4.0/  
 mkdir build  
@@ -66,15 +63,14 @@ And install.
 ```shell    
 make -j4  
 ```
-This is the last commands for install.  
+The last commands.  
 ```shell
 sudo make install
 sudo ldconfig
 ```
 
 ## Check
-Check whether OpenCV is installed correctly folling the command below.  
-
+ make sure OpenCV is installed correctly by this command.  
 ```
 $ python  
 >>> import cv2
